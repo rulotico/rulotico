@@ -1,8 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700');
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  color: #f3f3f3;
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background-color: black;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+
+.grid-points{
+      background-image: url(../img/points.png);
+      background-repeat: repeat;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: .5;
+      pointer-events: none;
+}
+
+#background {
+   pointer-events: none;
+   display:none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   /*min-width: 100%;
+   min-height: 100%;*/
+   width: auto;
+   height: auto;
+   z-index: -100;
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+}
+
+
+@media (min-width: 62em) {
+   #background {
+      display:block;
+          width: 1000px;
+   }
+
+}
+
+
+@media (max-width:992px) {
+  html{
+    background: url(../img/rulotico.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
 }

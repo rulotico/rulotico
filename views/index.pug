@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  .grid-points
+  video#background(autoplay='', loop='', muted='', poster='img/rulotico.jpg')
+    source(src='img/rulotico.mp4', type='video/mp4')
+    source(src='img/rulotico.webm', type='video/webm')
+    source(src='img/rulotico.ogv', type='video/ogg')

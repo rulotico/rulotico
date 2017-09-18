@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800');
 
 body {
   padding: 50px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Raleway', sans-serif;
   color: #f3f3f3;
   -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    background-color: black;
+   letter-spacing: 1px;
+   font-size: 13px;
+
 }
 
 a {
@@ -31,8 +33,8 @@ a {
 #background {
    pointer-events: none;
    display:none;
-   position: fixed;
-   top: 50%;
+   position: relative;
+    top: 41vh;
    left: 50%;
    /*min-width: 100%;
    min-height: 100%;*/
@@ -43,17 +45,70 @@ a {
    transform: translateX(-50%) translateY(-50%);
 }
 
+.logo-mobile{
+  display: none;
+}
+.logo-mobile img{
+  width: 100%;
+}
 
-@media (min-width: 62em) {
+/*/LAYOUT*/
+
+.flags{
+  font-size: 10px;
+  position: fixed;
+  right:30px;
+  top: 30px;
+  font-weight: 900;
+
+}
+.flags .option:hover{
+  color: #f50d58;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+
+.socials{
+  margin-right: 10px;
+}
+
+
+.txt-effect{
+    color: #b5b5b5;
+    text-shadow: 3px 3px rgba(232, 0, 0, 0.36), -1px 1px rgba(59, 25, 249, 0.75);
+}
+
+
+
+
+/*===========SECTION*/
+.section1{
+  padding-top: 29vh;
+}
+
+
+
+
+
+@media (min-width: 2em) {
    #background {
       display:block;
-          width: 1000px;
+          width: 700px;
    }
 
 }
 
 
+
 @media (max-width:992px) {
+  .no-mobile{
+    display: none;
+  }
+  .logo-mobile{
+        display: block;
+  }
+
   html{
     background: url(../img/rulotico.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

@@ -16,6 +16,9 @@ a {
   color: #00B7FF;
 }
 
+h6{
+  font-weight: 600;
+}
 
 
 .grid-points{
@@ -34,7 +37,7 @@ a {
    pointer-events: none;
    display:none;
    position: relative;
-    top: 41vh;
+    top: 19vh;
    left: 50%;
    /*min-width: 100%;
    min-height: 100%;*/
@@ -84,11 +87,20 @@ a {
 
 /*===========SECTION*/
 .section1{
-  padding-top: 29vh;
+  padding-top: 0vh;
+}
+
+
+/* modifiers */
+
+
+.white{
+  color: white
 }
 
 
 
+/* MEDIAS */
 
 
 @media (min-width: 2em) {

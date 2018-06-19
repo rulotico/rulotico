@@ -18,7 +18,7 @@ body{
 background: linear-gradient(transparent,#000,#000,#000 ), url(../img/backy.jpg) no-repeat;
 
     background-size: 100%;
-    padding-top: 327px;
+    padding-top: 259px;
 }
 
 a {
@@ -41,6 +41,12 @@ h6{
       opacity: .5;
       pointer-events: none;
 }
+
+.rulotico{
+  width: 44%;
+    margin-left: -23px;
+}
+
 
 #background {
    pointer-events: none;

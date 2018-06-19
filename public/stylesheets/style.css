@@ -12,6 +12,15 @@ body {
 
 }
 
+body{
+
+
+background: linear-gradient(transparent,#000,#000,#000 ), url(../img/backy.jpg) no-repeat;
+
+    background-size: 100%;
+    padding-top: 327px;
+}
+
 a {
   color: #00B7FF;
 }
@@ -37,7 +46,7 @@ h6{
    pointer-events: none;
    display:none;
    position: relative;
-    top: 19vh;
+    top: 24vh;
    left: 50%;
    /*min-width: 100%;
    min-height: 100%;*/
@@ -63,6 +72,7 @@ h6{
   right:30px;
   top: 30px;
   font-weight: 900;
+     z-index: 2000000;
 
 }
 .flags .option:hover{
@@ -105,8 +115,8 @@ h6{
 
 @media (min-width: 2em) {
    #background {
-      display:block;
-          width: 700px;
+     display: block;
+     width: 495px;
    }
 
 }
@@ -121,12 +131,13 @@ h6{
         display: block;
   }
 
-  html{
-    background: url(../img/rulotico.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  video{
+    display: none !important;
+  }
+
+  body{
+    padding-top: 0px;
+    background: black
   }
 
 }

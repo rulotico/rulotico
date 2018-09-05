@@ -145,5 +145,12 @@ h6{
     padding-top: 0px;
     background: black
   }
+  .flags{
+    background-color: black;
+    padding: 2em;
+    top: 0px;
+    left: 0;
+    text-align: center;
+  }
 
 }

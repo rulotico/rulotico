@@ -81,10 +81,14 @@ h6{
      z-index: 2000000;
 
 }
-.flags .option:hover{
+.option a{
+  color: white;
+}
+.flags .option:hover,.option a:hover{
   color: #f50d58;
     transition: all 1s;
     cursor: pointer;
+    text-decoration: none;
 
 }
 

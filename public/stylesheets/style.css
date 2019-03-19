@@ -71,6 +71,12 @@ h6{
 }
 
 /*/LAYOUT*/
+.badge_google img{
+  height: 100px;
+  position: fixed;
+  top: 16px;
+  left: 20px;
+}
 
 .flags{
   font-size: 10px;

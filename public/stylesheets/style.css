@@ -145,6 +145,7 @@ h6{
   }
   .logo-mobile{
         display: block;
+            margin-top: 16px;
   }
 
   video{
@@ -161,6 +162,11 @@ h6{
     top: 0px;
     left: 0;
     text-align: center;
+  }
+  .badge_google img {
+    height: 71px;
+    z-index: 999999999;
+    position: absolute;
   }
 
 }

@@ -1,32 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800');
 
 body {
   padding: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #f3f3f3;
   -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    background-color: black;
    letter-spacing: 1px;
    font-size: 13px;
+  max-width: 960px;
+  margin: auto;
 
 }
 
+
+
+/* colors */
+.purple{color:#663bdd}
+.red{color:#f54747}
+.blue{color:#06d9e9}
+.yellow{color:#ebe12a}
+.gray{color: #a2a2a2}
+.green{color: green;
+}
 body{
-
-
-background: linear-gradient(transparent,#000,#000,#000 ), url(../img/backy.jpg) no-repeat;
-
+    background: linear-gradient(transparent,#000,#000,#000 ), url(../img/back.jpg) no-repeat;
     background-size: 100%;
     padding-top: 259px;
 }
 
 a {
-  color: #00B7FF;
+  color: #01ffd6;
 }
-
+h1,h2,h3{
+  font-weight: 700;
+}
 h6{
   font-weight: 600;
+}
+hr{
+  border-color: rgb(109 103 103 / 27%);
+}
+strong{
+  color: white;
 }
 
 
@@ -35,7 +51,8 @@ h6{
       background-repeat: repeat;
       height: 100vh;
       width: 100%;
-      position: absolute;
+      position: fixed;
+      background-size: 8px;
       top: 0px;
       left: 0px;
       opacity: .5;
@@ -43,7 +60,8 @@ h6{
 }
 
 .rulotico{
-  width: 44%;
+  width: 30%;
+  max-width: 500px;
     margin-left: -23px;
 }
 
@@ -86,6 +104,7 @@ h6{
   font-weight: 900;
      z-index: 2000000;
 
+
 }
 .option a{
   color: white;
@@ -124,7 +143,9 @@ h6{
   color: white
 }
 
-
+.no-margin{
+  margin: 0;
+}
 
 /* MEDIAS */
 
@@ -153,8 +174,15 @@ h6{
   }
 
   body{
-    padding-top: 0px;
-    background: black
+    background-position-y: 60px;
+    background-size: 100vh;
+    background-position: top;
+    padding: 28px;
+    padding-top: 30vh;
+
+  }
+  .container{
+    padding: 0;
   }
   .flags{
     background-color: black;
@@ -162,6 +190,7 @@ h6{
     top: 0px;
     left: 0;
     text-align: center;
+    width: 100%;
   }
   .badge_google img {
     height: 71px;

@@ -9,6 +9,10 @@ html
     link(rel='stylesheet', href='/stylesheets/animate.css')
     link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
     link(rel="icon" href="/favicon.ico" type="image/x-icon")
+      
+    link(rel='preconnect', href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap', rel='stylesheet')
+
     
     meta(name='description', content='Rulótico González es un Diseñador Interactivo residente fundador de Sable Digital Studio')
     meta(property='og:title', content='Rulótico González | Interactive Designer | Coder-Designer')
@@ -23,8 +27,7 @@ html
     
     
   body
-    .badge_google
-      img.animated.rubberBand(src="img/badge.png", alt="")
+    
     .flags.animated.fadeInDown
       a.white(href="http://facebook.com/rulotico" target="_blank") 
         span.option.socials
@@ -38,12 +41,12 @@ html
       a.white(href="http://instagram.com/rulotico_" target="_blank")
         span.option.socials
           i.fa.fa-instagram
-      | &nbsp;·  &nbsp;&nbsp;
-      span.option#esp
-        a(href="/es") 🇲🇽 
-      |/ 
-      span.option#eng
-        a(href="/en") 🇺🇸
+      //- | &nbsp;·  &nbsp;&nbsp;
+      //- span.option#esp
+      //-   a(href="/es") 🇲🇽 
+      //- |/ 
+      //- span.option#eng
+      //-   a(href="/en") 🇺🇸
     block content
     script(src='https://use.fontawesome.com/7403b41c6a.js')
     script(src="js/main.js")

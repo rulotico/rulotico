@@ -1577,3 +1577,7 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+
+.delay{
+  animation-delay: .5s;
+}

@@ -2,70 +2,101 @@ extends layout
 
 block content
   .grid-points
-  .logo-mobile.only-mobile.animated.fadeIn
-    img(src="img/rulotico.jpg", alt="")
-  .text-center.animated.fadeIn.no-mobile
-    img.rulotico(src="img/rulotico.gif", alt="")
-  .container.animated.fadeInUp
+  //- .logo-mobile.only-mobile.animated.fadeIn
+  //-   img(src="img/rulotico.jpg", alt="")
+  //- .text-center.animated.fadeIn
+  //-   img.rulotico(src="img/rulotico.gif", alt="")
+  .container
     .section1
-      .col-md-6.offset-md-3
-        h6.glitch(data-text='$:whoami') $:whoami
-        br
-        p.txt-effect.text-justify Mi nombre es Rulótico González y soy mejor conocido como 
-          a(href="www.twitter.com/rulotico" target="_blank") @rulotico
-          |, diseñador interactivo, me gusta el internet y creo ideas digitales desde que tengo 15 años.
+      .col-md-8.offset-md-2
+        h1.glitch.animated.fadeIn Leading design teams for delivering valuable digital experiences.
+        br  
+        p.text-justify.animated.fadeInUp Rulo a.k.a    
+          a(href="http://www.twitter.com/rulotico" target="_blank") @rulotico
+          | 
+          |it’s a designer and entrepreneur that loves to encourage people to create outstanding proyects.
         
-        p.txt-effect.text-justify Empecé creando animaciones, experimentos y páginas Web en 
-          strong 2004
-          | donde me enamore del desarrollo y diseño para después especializarme en el diseño interactivo, terminando mi carrera en 2012, he trabajado en agencias de publicidad en los equipos digitales y estuve en 
-          strong Digital Invaders en 2012
-          |, toda esta temporada aprendiendo sobre  creatividad digital y la necesidad de equipos interdisciplinarios que puedan crear tecnología en esta industria
-        p.txt-effect.text-justify Mi carrera creando productos empieza en 
-          strong Startupbus 2013 
-          | donde competimos contra equipos de EE.UU. conociendo así el emprendimiento tecnológico, terminando esa etapa me dediqué a crear un estudio llamado 
-          a(href="www.sable.mx" target="_blank") Sable Studio 
-          | en el cual desarrollamos toda la construcción tecnológica de un nuevo producto o la mejora de uno existente. 
-        p.txt-effect.text-justify Hoy en día me dedico a generar conocimiento en la construcción de sistemas de diseño y formación de 
-          strong unicornios (Programadores que saben diseñar y diseñadores que saben programar). 
-          | Esto es lo que yo me considero actualmente y al ver el potencial ansío disminuir la brecha que hay entre programadores y diseñadores en perfiles dentro de equipos techies. 
+        .animated.fadeIn.delay
+          hr
+          hr
+          h6.glitch My Design Principles focus on be 
+            span.blue empathic 
+            |to understand the users, creating a 
+            span.purple systematic 
+            |workflows, not forgetting the 
+            span.yellow creativity 
+            |and 
+            span.red measuring 
+            |the result.
+          hr
+          hr
+          small.strong.glitch(data-text='Experience') Experience
+          br
+          br
+          h6.no-margin 💳  Design Operations Manager
+          small.gray Albo challenger bank 
+            span.green.strong Currently
+          p Leading product designers to creating apps an making accesible financial service.
+          br
+          h6.no-margin ⚡️  Founder CTO
+          small.gray Sable Studio
+          p Software studio creating web, mobile apps, and marketing content. Check on 
+            a(href="https://www.sable.mx" target="_blank") sable.mx
+          br
+          h6.no-margin 📱  Senior Product Designer
+          small.gray Sacs Cloud
+          p Creating apps and tecnology, investigation and  solid ideas for make software application for sales and business processes. Check the draft document of 
+            a(href="https://www.notion.so/rulotico/ERP-Product-ea4e6dbc49ad43e79d34bc2561aba027" target="_blank") procedular builder ERP.
         
-        h6.glitch(data-text='$:skills') $:skills
-        br
-        | Programador
-        ul.txt-effect
-          li Front end
-          li Back end
-          li System architecture
-        | Diseñador
-        ul.txt-effect
-          li Product Designer
-          li Illustrator
-          li UI Designer
-          li 3D artist
-          li Motion Graphics
-        | Growt hacker
-        ul.txt-effect
-          li Data analyst
-          li Convertion Flows
-        | Lidership
-        br
-        |Digital Creativity
-        br
-        br
-        h6.glitch(data-text='$:actual development') $:actual development
-        br
-        ul.txt-effect
-          li Design systems
-          li Tracking systems for marketing
-          li Product Design
-          li New process for software designers.
-        h6.glitch(data-text='$:skills') $:gamer
-        ul.txt-effect
-          li Overwatch 
-          li Monsterhunter
-          li Mario kart
-        hr
-        br
-        h6.txt-effect.glitch(data-text='$:Say hi: rulotico@gmail.com') $:Say hi: 
-          a(href="mailto:rulotico@gmail.com") rulotico@gmail.com
-        
+          a(href="https://dribbble.com/shots/6946189--Point-of-sale-mobile" target="_blank") Point of sale mobile
+          br
+          a(href="https://dribbble.com/shots/6937274-Data-Table-constructor" target="_blank") Data table constructor
+          br
+          br
+          h6.no-margin ✅  Teacher Expert
+          small.gray Platzi
+          p Planning professional courses with live streaming and expert teacher in programming, marketing, design and business.
+          a(href="https://platzi.com/cursos/sistemas-diseno/" target="_blank") Design system for Designers
+          br
+          a(href="https://platzi.com/cursos/diseno-desarrolladores/" target="_blank") Design system for Coders
+          br
+          a(href="https://platzi.com/cursos/diseno-interfaz/" target="_blank") UI Design
+          br
+          a(href="https://platzi.com/cursos/html-css/" target="_blank") Html Websites
+          br
+          br
+            
+          h6.no-margin 📦  Google Expert Interaction design
+          small.gray Google expert program 
+          p A global program to recognize individuals who are experts and thought leaders.
+          br
+          h6.no-margin 🇯🇵  Tokyo design system speaker
+          small.gray Tokyo tech ecosystem 
+          p A series of talks in different companies learning about the design workflow.
+          br
+          h6.no-margin 🇨🇴  Conf Speaker
+          small.gray Platzi Conf 
+          p The space for creators, entrepreneurs and enthusiasm joining to listen expert talks about development and the updates of the industry. Over 3000 people. Check on 
+            a(href="https://www.youtube.com/watch?v=MEeVjv-VZNo" target="_blank") here.
+          br
+          h6.no-margin 🇲🇽  Mexico Bus Director
+          small.gray Startup Bus
+          p Leading teams that empower the creators of the next generation of technology companies to disrupt the status quo, StartupBus is the legendary startup competition and boot camp that fast forwards lives and careers, changing how you see the world and your place in it. Check on 
+            a(href="http://www.startupbus.mx/" target="_blank") startupbus.mx 
+            | or check the 
+            a(href="https://www.youtube.com/watch?v=ONwg6Ec4tyM" target="_blank") video. 
+          br
+          h6.no-margin 🏀  Leader Dribbble Community Mexico City
+          small.gray Dribbble CDMX 
+          p Leading a community bringing together designers and developers to discuss the process between design and code. Improving the knowledge around the workflow. Check our community 
+            a(href="https://www.meetup.com/es/DribbbleMX-Meetup/" target="_blank") here.
+          br
+          br
+          p Download my 
+            a(href="https://drive.google.com/file/d/18fYdccMqb0o1OKTlkNc_ZVpobF17yhxf/view" target="_blank") curriculum.pdf
+            | 
+            small (5min lecture) 
+            | or check the extended version 
+            a(href="https://www.notion.so/rulotico/Ra-l-Gonz-lez-Garc-a-69e4d61866a34b13bf576cb30f6fad99" target="_blank") here
+            | 
+            small (20min lecture) 

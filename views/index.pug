@@ -1,4 +1,5 @@
 extends layout
+include mixins
 
 block content
   .grid-points
@@ -30,7 +31,20 @@ block content
             |the result.
           hr
           hr
-          small.strong.glitch(data-text='Experience') Experience
+          
+          small.strong.glitch(data-text='Success_Cases') Success_Cases
+          br
+          br
+          .card_wrap
+            
+            +card("Design leadership @albomx","My path creating a strong design team for building  a fintech app.")
+            +card("Designing App architecture @albomx","The creation process of a new scalable architecture for multi products and features.")
+            +card("Founding Sable digital Studio","The milestones creating my own company at Mexico City.")
+            +card("Building a Design Community @dribbbleMX ","The experience creating a interaction design community and leader builder.")
+            +card("Leading @startupbus","Organizing the event that join together different cultures to create technology trough countries.")
+          br
+          br
+          small.strong.glitch(data-text='Experience_Log') Experience_Log
           br
           br
           h6.no-margin 💳  Design Operations Manager

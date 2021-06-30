@@ -21,8 +21,8 @@ body {
 .blue{color:#06d9e9}
 .yellow{color:#ebe12a}
 .gray{color: #a2a2a2}
-.green{color: green;
-}
+.green{color: green;}
+.black{color:#2b2d2f;}
 body{
     background: linear-gradient(transparent,#000,#000,#000 ), url(../img/back.jpg) no-repeat;
     background-size: 100%;
@@ -127,12 +127,45 @@ strong{
     text-shadow: 3px 3px rgba(232, 0, 0, 0.36), -1px 1px rgba(59, 25, 249, 0.75);
 }
 
+/*===========MIXINS*/
+.card_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.card_wrap .card_success:first-child{
+  flex-grow: 99999;
+  width: 100%;
+}
+
+.card_success{
+  background: white;
+  padding: 16px;
+  margin: 4px;
+  flex-grow: 1;
+  width: 25%;
+  border-radius: 3px;
+}
+
+.image_feat{
+  height: 100px;
+  background: yellow;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 16px;
+}
+
 
 
 
 /*===========SECTION*/
 .section1{
   padding-top: 0vh;
+
 }
 
 

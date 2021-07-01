@@ -35,13 +35,24 @@ block content
           small.strong.glitch(data-text='Success_Cases') Success_Cases
           br
           br
-          .card_wrap
-            
-            +card("Design leadership @albomx","My path creating a strong design team for building  a fintech app.")
-            +card("Designing App architecture @albomx","The creation process of a new scalable architecture for multi products and features.")
-            +card("Founding Sable digital Studio","The milestones creating my own company at Mexico City.")
-            +card("Building a Design Community @dribbbleMX ","The experience creating a interaction design community and leader builder.")
-            +card("Leading @startupbus","Organizing the event that join together different cultures to create technology trough countries.")
+          if secret
+            .card_wrap
+              +card(false,"⚡️Founding Sable digital Studio","sable_f.png","The milestones creating my own company at Mexico City.","https://google.com")
+              +card(false,"⚙️App architecture @albomx","tres_f.png","The creation process of a new scalable architecture for multi products and features.","https://google.com")
+              +card(false,"🚌Leading @startupbus","startup_f.jpg","Organizing the event that join together different cultures to create technology trough countries.","https://google.com")
+              +card(false,"⭐Desi️gn leadership @albomx","albo_f.png","My path creating a strong design team and build a design system for Fin-tech app.","https://google.com")
+              +card(false,"🏀Building a Design Community @dribbbleMX ","dribbble.jpeg","The experience creating a interaction design community and leader builder.","https://google.com")
+              +card(false,"🎨Gestionix design system","gestionix_f.png","The design and development of a library that helps a CRM to improve the UI","https://google.com")
+              +card(false,"🙋🏻‍♂️Personal impact","rulotico_fb.jpg","The way my actions and my way to share content impact to other people","https://google.com")
+          else
+            .card_wrap
+              +card(false,"⚡️Founding Sable digital Studio","sable_f.png","The milestones creating my own company at Mexico City.","https://google.com")
+              +card(true,"⚙️App architecture @albomx","tres_f.png","The creation process of a new scalable architecture for multi products and features.","https://google.com")
+              +card(false,"🚌Leading @startupbus","startup_f.jpg","Organizing the event that join together different cultures to create technology trough countries.","https://google.com")
+              +card(true,"⭐️Design leadership @albomx","albo_f.png","My path creating a strong design team and build a design system for Fin-tech app.","https://google.com")
+              +card(false,"🏀Building a Design Community @dribbbleMX ","dribbble.jpeg","The experience creating a interaction design community and leader builder.","https://google.com")
+              +card(false,"🎨Gestionix design system","gestionix_f.png","The design and development of a library that helps a CRM to improve the UI","https://google.com")
+              +card(false,"🙋🏻‍♂️Personal impact","rulotico_fb.jpg","The way my actions and my way to share content impact to other people","https://google.com")
           br
           br
           small.strong.glitch(data-text='Experience_Log') Experience_Log

@@ -24,7 +24,7 @@ body {
 .green{color: green;}
 .black{color:#2b2d2f;}
 body{
-    background: linear-gradient(transparent,#000,#000,#000 ), url(../img/back.jpg) no-repeat;
+    background: linear-gradient(transparent,#000,#000,#000,#000,#000,#000  ), url(../img/back.jpg) no-repeat;
     background-size: 100%;
     padding-top: 259px;
 }
@@ -147,6 +147,29 @@ strong{
   flex-grow: 1;
   width: 25%;
   border-radius: 3px;
+
+  bottom: 16px;
+}
+
+a.card_success:hover,a.card_success:focus{
+  text-decoration: none;
+  color: initial;
+
+}
+
+a.card_success:hover .image_feat{
+    background-size: 138%;
+
+    transition: all 1500ms linear;
+}
+
+.block{
+  cursor: no-drop;
+  opacity: .9;
+}
+
+.flac{
+  font-weight: bold;
 }
 
 .image_feat{
@@ -157,6 +180,8 @@ strong{
   margin-right: -16px;
   border-radius: 3px 3px 0 0;
   margin-bottom: 16px;
+  background-position: center;
+  background-size: 100%;
 }
 
 
@@ -212,13 +237,16 @@ strong{
     background-position: top;
     padding: 28px;
     padding-top: 30vh;
+    background-position: inherit;
+    padding-top: 21vh;
+
 
   }
   .container{
     padding: 0;
   }
   .flags{
-    background-color: black;
+    background-color: rgb(0 0 0 / 51%);;
     padding: 2em;
     top: 0px;
     left: 0;
@@ -229,6 +257,17 @@ strong{
     height: 71px;
     z-index: 999999999;
     position: absolute;
+  }
+
+  .card_wrap{
+    flex-direction: column;
+  }
+  .card_wrap .card_success{
+    width: 100%;
+  }
+
+  .image_feat{
+        height: 35vh;
   }
 
 }

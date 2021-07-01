@@ -1,5 +1,16 @@
-mixin card(name, desc)
-  .card_success.black
-    .image_feat
-    h6= name
-    p.no-margin= desc
+mixin card(priv,name,img,desc,link)
+  
+  if priv
+    .card_success.black.block
+      .image_feat(style=`background-image:url(../img/book/${img})`)
+      h6= name
+      p.no-margin= desc
+      if priv
+        small.red.flac >Confidential
+  else
+    a.card_success.black(href=`${link}` target="_blank")
+      .image_feat(style=`background-image:url(../img/book/${img})`)
+      h6= name
+      p.no-margin= desc
+      if priv
+        small.red.flac >Confidential

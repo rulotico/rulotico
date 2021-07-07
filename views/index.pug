@@ -35,30 +35,34 @@ block content
           small.strong.glitch(data-text='Success_Cases') Success_Cases
           br
           br
-          if secret
-            .card_wrap
-              +card(false,"⚡️Founding Sable digital Studio","sable_f.png","The milestones creating my own company at Mexico City.","https://google.com")
-              +card(false,"⚙️App architecture @albomx","tres_f.png","The creation process of a new scalable architecture for multi products and features.","https://google.com")
-              +card(false,"🚌Leading @startupbus","startup_f.jpg","Organizing the event that join together different cultures to create technology trough countries.","https://google.com")
-              +card(false,"⭐Desi️gn leadership @albomx","albo_f.png","My path creating a strong design team and build a design system for Fin-tech app.","https://google.com")
-              +card(false,"🏀Building a Design Community @dribbbleMX ","dribbble.jpeg","The experience creating a interaction design community and leader builder.","https://google.com")
-              +card(false,"🎨Gestionix design system","gestionix_f.png","The design and development of a library that helps a CRM to improve the UI","https://google.com")
-              +card(false,"🙋🏻‍♂️Personal impact","rulotico_fb.jpg","The way my actions and my way to share content impact to other people","https://google.com")
-          else
-            .card_wrap
-              +card(false,"⚡️Founding Sable digital Studio","sable_f.png","The milestones creating my own company at Mexico City.","https://google.com")
-              +card(true,"⚙️App architecture @albomx","tres_f.png","The creation process of a new scalable architecture for multi products and features.","https://google.com")
-              +card(false,"🚌Leading @startupbus","startup_f.jpg","Organizing the event that join together different cultures to create technology trough countries.","https://google.com")
-              +card(true,"⭐️Design leadership @albomx","albo_f.png","My path creating a strong design team and build a design system for Fin-tech app.","https://google.com")
-              +card(false,"🏀Building a Design Community @dribbbleMX ","dribbble.jpeg","The experience creating a interaction design community and leader builder.","https://google.com")
-              +card(false,"🎨Gestionix design system","gestionix_f.png","The design and development of a library that helps a CRM to improve the UI","https://google.com")
-              +card(false,"🙋🏻‍♂️Personal impact","rulotico_fb.jpg","The way my actions and my way to share content impact to other people","https://google.com")
+          .card_wrap
+            if secret 
+              - var key_card = false
+            else
+              - var key_card = true
+              
+          
+            +card(false,"⚡️Founding Sable digital Studio","sable_f.png","The milestones creating my own company at Mexico City.","https://medium.com/@rulotico/%EF%B8%8Fcreating-sable-digital-studio-62d7b7f2c786")
+            +card(key_card,"⚙️App architecture @albomx","tres_f.png","The creation process of a new scalable architecture for multi products and features.","https://www.notion.so/rulotico/Designing-App-architecture-albomx-016377e8bd644d43b939d75930920eb2")
+            +card(false,"🚌Leading @startupbus","startup_f.jpg","Organizing the event that join together different cultures to create technology trough countries.","https://www.notion.so/rulotico/StartupBus-Mexico-directing-c88790bc3cc04b33be290c123b2f6475")
+            +card(key_card,"⭐Desi️gn leadership @albomx","albo_f.png","My path creating a strong design team and build a design system for Fin-tech app.","https://www.notion.so/rulotico/Design-Leadership-at-albo-mx-a6b80b5b090a45e699499d3dd5b99a41")
+            +card(false,"🏀Building a Design Community @dribbbleMX ","dribbble.jpeg","The experience creating a interaction design community of 1500 designers and leader building.","https://www.notion.so/rulotico/Building-a-community-DribbbleCDMX-37497fd10fc4433cab5cb0a5dd99c3f9")
+            
+          
           br
           br
+          small.strong 
+            |If you wanna know the incoming articles 👉 
+            a(href="https://www.notion.so/rulotico/Professional-articles-ccbbb78152024349959889fdeaab6292" target="_blank") click here
+          br
+          br
+          
+          hr
+          
           small.strong.glitch(data-text='Experience_Log') Experience_Log
           br
           br
-          h6.no-margin 💳  Design Operations Manager
+          h6.no-margin 💳  Design Operations Lead
           small.gray Albo challenger bank 
             span.green.strong Currently
           p Leading product designers to creating apps an making accesible financial service.
